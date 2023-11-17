@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>HUNA</title>
+  </head>
+  <body>
+    <!--     <div class="load" id="load">
+      <img
+        src="assets/img/spinning_arrows.gif"
+        alt="spinning arrows"
+        class="load__gif"
+      />
+    </div> -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> HUNA </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#specialty" class="nav__link">Oferta</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Kolekcja</a>
+            </li>
+            <li class="nav__item">
+              <a href="#premium" class="nav__link">Produkcja</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home grid" id="home">
+        <div class="home__container">
+          <div class="home__content container">
+            <h1 class="home__title" data-aos="fade-right" data-aos-delay="400">
+              Polski producent odzieży damskiej<span>.</span>
+            </h1>
+            <p class="home__description">Buy the best and delicious coffees.</p>
+
+            <div class="home__data">
+              <div class="home__data-group">
+                <h2 class="home__data-number">1995r</h2>
+                <h3 class="home__data-title">Rok założenia</h3>
+                <p class="home__data-description">
+                  Działamy na rynku od prawie 30 lat!.
+                </p>
+              </div>
+
+              <div class="home__data-group">
+                <h2 class="home__data-number">300+</h2>
+                <h3 class="home__data-title">Wyjątkowych fasonów</h3>
+                <p class="home__data-description">
+                  Od początku działalności stworzyliśmy ponad 300 wzorów
+                  odzieży!
+                </p>
+              </div>
+            </div>
+
+            <a href="#specialty">
+              <img src="assets/img/scroll.png" alt="" class="home__scroll" />
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="assets/img/hero2.png"
+          alt="smiling woman in coat"
+          data-aos="fade-left"
+        />
+      </section>
+      <div class="specialty section container" id="specialty">
+        <div class="specialty__container">
+          <div class="specialty__box">
+            <h2 class="section__title">
+              Posiadamy w ofercie odzież damską w rozmiarach od 34 do 52.
+            </h2>
+          </div>
+
+          <div class="specialty__category" data-aos="fade-left">
+            <div class="specialty__group specialty__line">
+              <img src="assets/img/coat.png" alt="" class="specialty__img" />
+
+              <h3 class="specialty__title">Płaszcze zimowe</h3>
+              <p class="specialty__description">
+                Płaszcze ocieplane, na podszewce.
+              </p>
+            </div>
+
+            <div class="specialty__group specialty__line">
+              <img src="assets/img/coat2.png" alt="" class="specialty__img" />
+
+              <h3 class="specialty__title">Płaszcze przejściowe</h3>
+              <p class="specialty__description">
+                Płaszcze nieocieplane lub ocieplane delikatne, na podszewce.
+              </p>
+            </div>
+
+            <div class="specialty__group">
+              <img src="assets/img/dress.png" alt="" class="specialty__img" />
+
+              <h3 class="specialty__title">Sukienki</h3>
+              <p class="specialty__description">
+                Eleganckie sukienki na wyjątkowe okazje.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="products section" id="products">
+        <div class="products__container container">
+          <h2 class="section__title">
+            Zobacz wybrane modele z naszej kolekcji
+          </h2>
+
+          <ul class="products__filters">
+            <li class="products__item active-product" data-filter=".delicacies">
+              <h3 class="products__title">Płaszcze zimowe</h3>
+              <span class="products__stock"></span>
+            </li>
+            <li class="products__item" data-filter=".coffee">
+              <h3 class="products__title">Płaszcze przejściowe</h3>
+              <span class="products__stock"></span>
+            </li>
+
+            <li class="products__item" data-filter=".cake">
+              <h3 class="products__title">Sukienki</h3>
+              <span class="products__stock"></span>
+            </li>
+          </ul>
+
+          <div class="products__content grid">
+            <!-- winter coats-->
+            <article class="products__card mix delicacies">
+              <div class="products__shape">
+                <img src="assets/img/elwira.jpg" alt="" class="products__img" />
+              </div>
+              <div class="products__data">
+                <h3 class="products__name">Elwira</h3>
+              </div>
+            </article>
+
+            <!-- spring coats-->
+            <article class="products__card mix coffee">
+              <div class="products__shape">
+                <img
+                  src="assets/img/katarzyna.jpg"
+                  alt=""
+                  class="products__img"
+                />
+              </div>
+
+              <div class="products__data">
+                <h3 class="products__name">Katarzyna</h3>
+              </div>
+            </article>
+
+            <!--dresses -->
+            <article class="products__card mix cake">
+              <div class="products__shape">
+                <img src="assets/img/dress.png" alt="" class="products__img" />
+              </div>
+
+              <div class="products__data">
+                <h3 class="products__name">Sukienka</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quality section" id="premium">
+        <div class="quality__container container">
+          <h2 class="section__title">Polska produkcja</h2>
+
+          <div class="quality__content grid" data-aos="fade-right">
+            <div class="quality__images">
+              <img
+                src="assets/img/quality1.png"
+                alt=""
+                class="quality__img-big"
+              />
+              <img
+                src="assets/img/quality2.png"
+                alt=""
+                class="quality__img-small"
+              />
+            </div>
+
+            <div class="quality__data">
+              <h1 class="quality__title">
+                Tylko najlepsza jakość <span>.</span>
+              </h1>
+              <p class="quality__description">
+                Huna to polska firma zajmującą się produkcją damskiej odzieży
+                wierzchniej. To propozycje dla kobiet, które poszukują w
+                ubraniach nie tylko skrojonych niczym na miarę fasonów, ale
+                także ciekawego wzornictwa i twarzowych kolorów.
+              </p>
+
+              <p class="quality__description">
+                Nasze produkty charakteryzuje wysoka jakość materiałów i
+                staranne wykonanie. To dlatego stylowe kurtki, szykowne
+                marynarki, eleganckie płaszcze, modne żakiety oraz zachwycające
+                kobiece sukienki marki HUNA cieszą się tak wielką popularnością.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <h2 class="section__title">Nasz adres:</h2>
+          <p class="contact__description">
+            Feliksa Perla 10a, 41-300 Dąbrowa Górnicza
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1273.5552872359274!2d19.165869356430353!3d50.32718826942879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716da12206fbdbb%3A0xe7035a8c1bf1641b!2sPolskie%20P%C5%82aszcze%20HUNA!5e0!3m2!1spl!2spl!4v1700222524025!5m2!1spl!2spl"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="contact__data">
+            <h2 class="contact__title">
+              Zapraszamy do kontaktu na poniższe numery WYŁĄCZNIE klientów
+              hurtowych.
+            </h2>
+            <p>Nie prowadzimy sprzedaży detalicznej.</p>
+            <div class="quality__content grid">
+              <h3 class="contact__description">
+                Przedstawiciel handlowy:
+                <a href="tel:0048698416665">
+                  <p><i class="bx bx-phone"></i> +48 698 416 665</p>
+                </a>
+              </h3>
+
+              <h3 class="contact__description">
+                Stoiska firmowe na CH PTAK:
+                <a href="tel:0048730591382">
+                  <p><i class="bx bx-phone"></i>A181: +48 730 591 382</p>
+                </a>
+                <a href="tel:0048730591210">
+                  <p><i class="bx bx-phone"></i>D85: +48 730 591 210</p>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">HUNA</h1>
+
+        <div class="footer__content grid">
+          <div class="footer__data">
+            <p class="footer__description">Napisz do nas</p>
+
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mknlavqa"
+              method="POST"
+              class="footer__form"
+            >
+              <div class="footer__form-inputs">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Twój email"
+                  class="footer__form-input"
+                />
+                <textarea
+                  type="email"
+                  name="message"
+                  placeholder="Treść wiadomości"
+                  class="footer__form-input"
+                ></textarea>
+              </div>
+              <button class="footer__form-button" id="my-form-button">
+                Wyślij <i class="bx bx-right-arrow-alt"></i>
+              </button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Adres</h2>
+            <p class="footer__information">
+              ul. Perla 10a<br />
+              41-300 Dąbrowa Górnicza
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Kontakt</h2>
+            <p class="footer__information-contact">
+              <a href="tel:+48327295676">+48 32 729 56 76</a>
+              <a href="mailto:huna@onet.pl">huna@onet.pl</a>
+            </p>
+          </div>
+
+          <div class="footer__data">
+            <h2 class="footer__subtitle">Biuro</h2>
+            <p class="footer__information">
+              Poniedziałek - Piątek<br />
+              8:00 - 16:00
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <ul class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </ul>
+
+          <span class="footer__copy">
+            &#169; Seahorse 2023 All rigths reserved
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
+
+    <script type="module" src="assets/js/mixitup.min.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

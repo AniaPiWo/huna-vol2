@@ -1,0 +1,109 @@
+.footer {
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+
+  &__title {
+    color: #fff;
+    font-size: var(--h1-font-size);
+    margin-bottom: 2rem;
+  }
+  &__description {
+    margin-bottom: 0.75rem;
+  }
+  &__newsletter {
+    display: flex;
+    column-gap: 0.5rem;
+  }
+  &__information {
+    &-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: 0.3s;
+
+      & a {
+        transition: 0.3s;
+        &:hover {
+          color: var(--first-color);
+        }
+      }
+    }
+  }
+
+  &__content {
+    row-gap: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--text-color);
+  }
+  &__subtitle {
+    color: #fff;
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.75rem;
+  }
+  &__flag {
+    width: 1rem;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+
+    &-link {
+      color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        color: var(--first-color);
+      }
+    }
+  }
+  &__copy {
+    font-size: var(--smaller-font-size);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &-inputs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    &-input {
+      border: none;
+      outline: none;
+      padding: 1.25rem 1rem;
+      border-radius: 0.25rem;
+      width: 100%;
+      color: var(--text-color);
+    }
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      padding: 0.75rem;
+      border-radius: 0.25rem;
+      background-color: var(--first-color);
+
+      & i {
+        font-size: 1.8rem;
+        transform: rotate(-30deg);
+        transition: 0.4s;
+      }
+      &:hover i {
+        transform: rotate(-30deg) translate(0.25rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(calc(206 / 1), 4%, 80%);
+
+  &-thumb {
+    background-color: hsl(calc(206 / 1), 4%, 64%);
+
+    &:hover {
+      background-color: hsl(calc(206 / 1), 4%, 48%);
+    }
+  }
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--first-color);
+  box-shadow: 0 4px 12px hsla(calc(206 / 1), 4%, 20%, 0.1);
+  display: inline-flex;
+  padding: 0.35rem;
+  border-radius: 15rem;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  z-index: var(--z-tooltip);
+  opacity: 0.9;
+  transition: 0.4s;
+
+  &:hover {
+    transform: translateY(-0.25rem);
+    opacity: 1;
+    color: var(--title-color);
+  }
+}
+
+.show-scroll {
+  bottom: 3rem;
+}

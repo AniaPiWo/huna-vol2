@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(36, 72%, 48%);
+  --first-color-alt: hsl(36, 72%, 44%);
+  --black-color: hsl(calc(206 / 1), 12%, 12%);
+  --card-color: hsl(0, 0%, 90%);
+  --title-color: hsl(calc(206 / 1), 12%, 12%);
+  --text-color: hsl(calc(206 / 1), 4%, 42%);
+  --text-color-light: hsl(calc(206 / 1), 4%, 75%);
+  --body-color: hsl(calc(206 / 1), 4%, 97%);
+  --container-color: #fff;
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Lato", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-bold: 700;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+  @media screen and (min-width: 968px) {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
