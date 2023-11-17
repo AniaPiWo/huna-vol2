@@ -1,8 +1,7 @@
 {
   "name": "huna-vol2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "site for huna",
   "type": "module",
   "scripts": {
     "dev": "sass --watch assets/scss:assets/css"
