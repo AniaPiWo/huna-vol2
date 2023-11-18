@@ -18,13 +18,6 @@
     <title>HUNA</title>
   </head>
   <body>
-    <!--     <div class="load" id="load">
-      <img
-        src="assets/img/spinning_arrows.gif"
-        alt="spinning arrows"
-        class="load__gif"
-      />
-    </div> -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo"> HUNA </a>
@@ -36,9 +29,9 @@
             <li class="nav__item">
               <a href="#specialty" class="nav__link">Oferta</a>
             </li>
-            <li class="nav__item">
+            <!--   in dev    <li class="nav__item">
               <a href="#products" class="nav__link">Kolekcja</a>
-            </li>
+            </li> -->
             <li class="nav__item">
               <a href="#premium" class="nav__link">Produkcja</a>
             </li>
@@ -63,14 +56,16 @@
             <h1 class="home__title" data-aos="fade-right" data-aos-delay="400">
               Polski producent odzieży damskiej<span>.</span>
             </h1>
-            <p class="home__description">Buy the best and delicious coffees.</p>
+            <p class="home__description">
+              Elegancja w każdym szwie! Odkryj naszą modę już dziś.
+            </p>
 
             <div class="home__data">
               <div class="home__data-group">
                 <h2 class="home__data-number">1995r</h2>
                 <h3 class="home__data-title">Rok założenia</h3>
                 <p class="home__data-description">
-                  Działamy na rynku od prawie 30 lat!.
+                  Działamy na rynku od prawie 30 lat!
                 </p>
               </div>
 
@@ -89,12 +84,13 @@
             </a>
           </div>
         </div>
-
-        <img
-          src="assets/img/hero2.png"
-          alt="smiling woman in coat"
-          data-aos="fade-left"
-        />
+        <div class="home__imgContainer">
+          <img
+            src="assets/img/hero4.png"
+            alt="smiling woman in coat"
+            data-aos="fade-left"
+          />
+        </div>
       </section>
 
       <section class="specialty section container" id="specialty">
@@ -136,67 +132,9 @@
         </div>
       </section>
 
-      <section class="products section" id="products">
-        <div class="products__container container">
-          <h2 class="section__title">
-            Zobacz wybrane modele z naszej kolekcji
-          </h2>
-
-          <ul class="products__filters">
-            <li class="products__item active-product" data-filter=".delicacies">
-              <h3 class="products__title">Płaszcze zimowe</h3>
-              <span class="products__stock"></span>
-            </li>
-            <li class="products__item" data-filter=".coffee">
-              <h3 class="products__title">Płaszcze przejściowe</h3>
-              <span class="products__stock"></span>
-            </li>
-
-            <li class="products__item" data-filter=".cake">
-              <h3 class="products__title">Sukienki</h3>
-              <span class="products__stock"></span>
-            </li>
-          </ul>
-
-          <div class="products__content grid">
-            <!-- winter coats-->
-            <article class="products__card mix delicacies">
-              <div class="products__shape">
-                <img src="assets/img/elwira.jpg" alt="" class="products__img" />
-              </div>
-              <div class="products__data">
-                <h3 class="products__name">Elwira</h3>
-              </div>
-            </article>
-
-            <!-- spring coats-->
-            <article class="products__card mix coffee">
-              <div class="products__shape">
-                <img
-                  src="assets/img/katarzyna.jpg"
-                  alt=""
-                  class="products__img"
-                />
-              </div>
-
-              <div class="products__data">
-                <h3 class="products__name">Katarzyna</h3>
-              </div>
-            </article>
-
-            <!--dresses -->
-            <article class="products__card mix cake">
-              <div class="products__shape">
-                <img src="assets/img/dress.png" alt="" class="products__img" />
-              </div>
-
-              <div class="products__data">
-                <h3 class="products__name">Sukienka</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <!--   section in dev
+      <section class="products section" id="products">  
+      </section> -->
 
       <section class="quality section" id="premium">
         <div class="quality__container container">
@@ -258,8 +196,8 @@
               Zapraszamy do kontaktu na poniższe numery WYŁĄCZNIE klientów
               hurtowych.
             </h2>
-            <p>Nie prowadzimy sprzedaży detalicznej.</p>
-            <div class="quality__content grid">
+            <p class="contact__info">Nie prowadzimy sprzedaży detalicznej.</p>
+            <div class="contact__content grid">
               <h3 class="contact__description">
                 Przedstawiciel handlowy:
                 <a href="tel:0048698416665">
@@ -268,12 +206,9 @@
               </h3>
 
               <h3 class="contact__description">
-                Stoiska firmowe na CH PTAK:
+                Stoisko firmowe na CH PTAK:
                 <a href="tel:0048730591382">
                   <p><i class="bx bx-phone"></i>A181: +48 730 591 382</p>
-                </a>
-                <a href="tel:0048730591210">
-                  <p><i class="bx bx-phone"></i>D85: +48 730 591 210</p>
                 </a>
               </h3>
             </div>

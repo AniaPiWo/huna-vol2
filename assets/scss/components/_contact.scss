@@ -7,9 +7,9 @@
     border-radius: 0.5rem;
   }
 
-  &__content {
-    row-gap: 2.5rem;
-  }
+  /*   &__content {
+    row-gap: 0.3rem;
+  } */
   &__images {
     position: relative;
     justify-self: center;
@@ -46,6 +46,7 @@
   }
   &__description {
     margin-bottom: 2.5rem;
+    margin-top: 1rem;
 
     & a {
       transition: 0.3s;
